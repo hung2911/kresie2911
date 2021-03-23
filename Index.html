@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>Unicamp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("/D:/anh bia unc.jpg")}
+.bgimg2 {background-image: url("/D:/unicamp2.jpg")}
+</style>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo"></h1>
+    <h2></h2>
+    <h2><b></b></h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">UNICAMP</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">THÔNG TIN CHI TIẾT</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-blue">ĐĂNG KÍ</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-blue w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-white"><b>U N I C A M P</b></h1>
+    <img class="w3-round" src="/D:/dalab.jpg" style="width:100%;margin:32px 0">
+    <p><i>UNICAMP 2021 là trại hè được tổ chức dành cho các em học sinh trong độ tuổi THPT có cơ hội được trải nghiệm, học tập, vui chơi, sinh hoạt trong khuôn viên kí túc xá như những sinh viên đại học.
+Ngoài ra UNICAMP còn mang đến cho các em những lớp học kĩ năng mềm, kĩ năng học tập trong vòng 4 ngày.
+- Đối tượng: Học sinh độ tuổi THPT .
+- Quy mô chương trình (dự kiến) : 70 em.
+- Trại hè UNICAMP : 15/07- 19/07/2021.
+- Địa điểm : Campus FU Hòa Lạc.
+- Chi phí cho mỗi em: 1.700.000 VND.
+UNICAMP 2021 hứa hẹn mang đến rất nhiều trải nghiệm cũng như những khoảnh khắc đáng nhớ cho những bạn tham gia, từ trại sinh cho đến những người tổ chức. </i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-white w3-round w3-padding-large w3-large">Thông tin chi tiết</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo"></h1><br>
+    <h2></h2>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-blue w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-white"><b>THÔNG TIN CHI TIẾT</b></h1>
+    <img class="w3-round-large" src="/D:/avatar.jpg" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>Thời gian</h2>
+        <p>21/04/2021</p>
+        <p></p>
+      </div>
+      <div class="w3-half">
+        <h2>Địa điểm</h2>
+        <p>Đại học FPT Hà Nội</p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-blue w3-center w3-wide" id="rsvp">
+  <h1>ĐĂNG KÍ NGAY!</h1>
+  <p class="w3-large">UNICAMP - IGNITE YOUR SPARK</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-white w3-opacity w3-hover-opacity-off" style="padding:8px 60px">ĐĂNG KÍ</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">ĐĂNG KÍ NGAY UNICAMP</h1>
+      <p>Nhập Email của bạn để được nhận ưu đãi</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p><i>BẠN SẼ THAM GIA UNICAMP CHỨ ?</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">SẼ TỚI</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">HẸN LẦN SAU</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
